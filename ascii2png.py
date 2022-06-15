@@ -23,7 +23,6 @@ def pngify(ascii_image, font):
 
     ascii_image_lines = ascii_image.splitlines()
     image_width, image_height = d.textsize(ascii_image_lines[0], font)
-    image_width, image_height = 1392, 24
     image_height *= len(ascii_image_lines)
     image = PIL.Image.new("1", (image_width, image_height))
     draw = PIL.ImageDraw.Draw(image)
